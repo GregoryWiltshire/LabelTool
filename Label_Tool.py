@@ -7,10 +7,9 @@ merger = PdfFileMerger()
 for pdf in group:
     page = PdfFileReader(pdf,"rd") 
 
-    #merger.append(page)
     merger.append(page)
 
-merger.write("dingus.pdf")
+merger.write("Testing.pdf")
 
 
    
