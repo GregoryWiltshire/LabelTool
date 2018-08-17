@@ -13,9 +13,7 @@ croppedlabels = list()
 
 for pdf in group:
     bytes = pdf2image.convert_from_path(pdf, dpi=300, output_folder=None, first_page=None, last_page=None, fmt='png', thread_count=1, userpw=None)
-    #booty = Image.frombuffer('RGB',(2550,3301),bytes[0], decoder_name='raw')
-    #bytes[0].show()
-    
+      
     #grab the first image in the list, crop
     croppedimage = bytes[0].crop((513,215,2070,1370))
     #rotate the label 90degrees CCW
